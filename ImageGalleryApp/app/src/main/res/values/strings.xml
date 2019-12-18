@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Image Gallery App</string>
+    <string name="get_data_from_database">Get the data from database</string>
+    <string name="saved">Saved</string>
+    <string name="get_data_from_api_and_stored_in_database">Get data from API call and stored in database</string>
+    <string name="loading">"Loading..."</string>
+</resources>

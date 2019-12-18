@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardElevation="5dp"
+    card_view:cardMaxElevation="5dp"
+    card_view:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCardBackground"
+        android:clickable="true">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/thumbnail_image_view"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:focusable="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/thumbnail_image_view"
+            android:layout_toRightOf="@+id/thumbnail_image_view"
+            android:text="Title"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
